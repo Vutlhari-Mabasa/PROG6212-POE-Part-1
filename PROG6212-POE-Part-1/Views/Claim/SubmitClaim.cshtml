@@ -5,18 +5,96 @@
 <h2>Submit Your Claim</h2>
 
 <form>
+    <!-- Personal Details Section -->
+    <fieldset>
+        <legend>Personal Details</legend>
+        <div class="form-group">
+            <label for="LecturerName">Lecturer Name:</label><br />
+            <input type="text" id="LecturerName" name="LecturerName" class="form-control" placeholder="Enter Lecturer Name" /><br />
+
+            <label for="LecturerSurname">Lecturer Surname:</label><br />
+            <input type="text" id="LecturerSurname" name="LecturerSurname" class="form-control" placeholder="Enter Lecturer Surname" /><br />
+
+            <label for="EmployeeNo">Employee No:</label><br />
+            <input type="number" id="EmployeeNo" name="EmployeeNo" class="form-control" placeholder="Enter Employee Number" /><br />
+
+            <label for="PhoneNumber">Phone Number:</label><br />
+            <input type="tel" id="PhoneNumber" name="PhoneNumber" class="form-control" placeholder="082-828-9746" /><br />
+        </div>
+    </fieldset>
+
+    <hr />
+
+    <!-- Claim Details Section -->
+    <fieldset>
+        <legend>Claim Details</legend>
+        <div class="form-group">
+            <label for="ModuleName">Module Name:</label><br />
+            <input type="text" id="ModuleName" name="ModuleName" class="form-control" placeholder="Enter Module Name" /><br />
+
+            <label for="ProgName">Programme Name:</label><br />
+            <input type="text" id="ProgName" name="ProgName" class="form-control" placeholder="Enter Programme Name" /><br />
+
+            <label for="Hours">Number of Hours:</label><br />
+            <input type="number" id="Hours" name="Hours" class="form-control" placeholder="Enter Number of Hours" /><br />
+
+            <label for="Rate">Hourly Rate:</label><br />
+            <input type="number" id="Rate" name="Rate" class="form-control" placeholder="Enter Hourly Rate" /><br />
+        </div>
+    </fieldset>
+
+    <br />
+
+    <!-- Buttons -->
     <div class="form-group">
-        <label for="ClaimDescription">Claim Description</label>
-        <textarea class="form-control" id="ClaimDescription" rows="3" placeholder="Enter details about your claim"></textarea>
+        <button type="button" class="btn btn-secondary">Add another Module</button>
+        <button type="submit" class="btn btn-primary">Submit Claim</button>
     </div>
-    <div class="form-group">
-        <label for="ClaimAmount">Claim Amount</label>
-        <input type="number" class="form-control" id="ClaimAmount" placeholder="Enter the amount">
-    </div>
-    <div class="form-group">
-        <label for="SupportingDocuments">Upload Supporting Documents</label>
-        <input type="file" class="form-control-file" id="SupportingDocuments">
-    </div>
-    <button type="submit" class="btn btn-primary">Submit Claim</button>
 </form>
 
+<style>
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+
+    fieldset {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    legend {
+        font-size: 1.5em;
+        padding: 0 10px;
+        font-weight: bold;
+    }
+
+    label {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+    .btn {
+        margin-right: 10px;
+    }
+
+    hr {
+        border: none;
+        border-top: 2px solid #ccc;
+        margin: 20px 0;
+    }
+</style>
